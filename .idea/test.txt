@@ -1,1 +1,1 @@
-dfasdfsfdgsdfgthis is some text
+this is for test gitignore
