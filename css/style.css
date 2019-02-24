@@ -1,0 +1,16 @@
+.pedar {
+    width: 400px;
+    height: 400px;
+    background: blue;
+    text-align: center;
+    color: #ffffff;
+}
+
+.farzand {
+    width: 200px;
+    height: 200px;
+    background: red;
+    text-align: center;
+    color: white;
+    margin: 82px;
+}

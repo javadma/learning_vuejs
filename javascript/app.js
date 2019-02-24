@@ -1,15 +1,11 @@
 new Vue({
     el: "#app",
     data: {
-        name: "جواد",
-        family: "جعفری نیا"
+        title: "هیچ عنوانی وجود ندارد"
     },
     methods: {
-        dayState(state) {
-            return 'سلام ' + this.name + '  ' + state;
-        },
-        fullName() {
-            return this.name + '  ' + this.family;
+        changeTitle() {
+            this.title = "آمزش ویو جی اس";
         }
     }
 });
