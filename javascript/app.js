@@ -1,11 +1,30 @@
 new Vue({
-    el: "#app",
+    el: '#app',
     data: {
-        title: "هیچ عنوانی وجود ندارد"
+        name: "Javad",
+        family: "Jafariniya",
     },
-    methods: {
-        changeTitle() {
-            this.title = "آمزش ویو جی اس";
+    // watch: {
+    //     name(value) {
+    //         this.fullName = value + " " + this.family;
+    //     },
+    //     family(value) {
+    //         this.fullName = this.name + " " + value;
+    //     }
+    // }
+    computed: {
+        fullName: {
+            get() {
+                return this.name + " " + this.family;
+            },
+            set(value) {
+                let names = value.split(" ");
+                this.name = names[0];
+                console.log(this.name);
+                this.family = names[1];
+                console.log(this.family);
+            }
         }
     }
+
 });
